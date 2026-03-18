@@ -4,10 +4,6 @@
 
 **A production-ready QA automation portfolio for Unity Android/iOS projects**
 
-[![QA Automation](https://img.shields.io/badge/QA-10%2F10-brightgreen?style=for-the-badge)](docs/automation-strategy.md)
-[![Security](https://img.shields.io/badge/Security-10%2F10-brightgreen?style=for-the-badge)](docs/security.md)
-[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](#license)
-
 *Every file helps you explain: **what you automated first**, **why that scope**, **how you would scale**, and **how this supports release confidence.***
 
 </div>
