@@ -126,7 +126,7 @@ Unity-Mobile-QA/
 - **Page Object Model** — `AppPage.js` for Appium specs
 - **Device matrix** — Android API 28 + 30
 - **SecureStorage tests** — Encryption round-trip, corrupt-data handling
-- **Failure reporting** — Slack webhook in CI; JIRA example with SSRF prevention
-- **Security** — CodeQL C# + JS; SBOM; APK signature verification; IL2CPP enforced
+- **Failure reporting** — Slack webhook in CI, JIRA example with SSRF prevention
+- **Security** — CodeQL C# + JS, SBOM, APK signature verification, IL2CPP enforced
 
 </details>
