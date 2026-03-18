@@ -94,7 +94,7 @@ Unity-Mobile-QA/
 
 ---
 
-## 10/10 Portfolio Checklist
+## Portfolio Checklist
 
 | Category | ✓ |
 |----------|---|
@@ -131,24 +131,6 @@ Unity-Mobile-QA/
 
 </details>
 
----
-
-## Why This Demonstrates QA Lead Capability
-
-| Pillar | What It Shows |
-|--------|---------------|
-| **Strategy** | Risk-based prioritization, documented tradeoffs |
-| **Technical** | Testable architecture, DI, reusable utilities |
-| **CI/CD** | Quality gate, metrics, device farm |
-| **Leadership** | Case study format, scalability, pragmatic coverage |
-
----
-
-<div align="center">
-
-**Made for QA Lead interviews • Unity 2022.3 LTS • Android & iOS**
-
-</div>
 
 ---
 
