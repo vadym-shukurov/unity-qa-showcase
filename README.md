@@ -130,10 +130,3 @@ Unity-Mobile-QA/
 - **Security** — CodeQL C# + JS; SBOM; APK signature verification; IL2CPP enforced
 
 </details>
-
-
----
-
-## License
-
-**MIT** — Use freely for portfolio and interview purposes.
