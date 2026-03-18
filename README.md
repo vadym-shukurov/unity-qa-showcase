@@ -1,0 +1,161 @@
+<div align="center">
+
+# Unity Mobile QA Automation Showcase
+
+**A production-ready QA automation portfolio for Unity Android/iOS projects**
+
+[![QA Automation](https://img.shields.io/badge/QA-10%2F10-brightgreen?style=for-the-badge)](docs/automation-strategy.md)
+[![Security](https://img.shields.io/badge/Security-10%2F10-brightgreen?style=for-the-badge)](docs/security.md)
+[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](#license)
+
+*Every file helps you explain: **what you automated first**, **why that scope**, **how you would scale**, and **how this supports release confidence.***
+
+</div>
+
+---
+
+## Quick Start
+
+| I want to… | Go to |
+|------------|-------|
+| **Understand the strategy** | [Automation Strategy](docs/automation-strategy.md) |
+| **Run tests** | [Setup Guide](docs/setup.md) |
+| **Prepare for interview** | [Case Study](docs/case-study.md) |
+
+---
+
+## Four Interview Questions — Answered
+
+| Question | Answer |
+|----------|--------|
+| **What did you automate first?** | Data integrity (progress, currency, settings) in Edit Mode → critical path in Play Mode → stability → device smoke |
+| **Why that scope?** | Risk-based. Highest risk = data loss and broken flow. Pragmatic coverage, not 100%. |
+| **How would you scale it?** | Iterative: stabilize smoke → add regression by risk → add device when build ready. Clear ownership (QA vs dev). |
+| **How does this support release confidence?** | Smoke = release gate. Pipeline fails if smoke fails. Metrics (pass rate, flaky rate) inform decisions. |
+
+> 💡 **Tip:** Key files have `// PRESENTATION:` comments (WHAT FIRST, WHY, SCALE, RELEASE). Use them when walking through code.
+
+---
+
+## Sample App Flow
+
+![Sample App Flow](docs/sample-app-flow.png)
+
+**Persistent:** Player progress, currency, settings • **Reward:** Virtual currency on level completion
+
+---
+
+## Test Pyramid
+
+![Test Pyramid](docs/test-pyramid.png)
+
+---
+
+## What's Included
+
+| Layer | Coverage |
+|-------|----------|
+| **Edit Mode** | Progress, currency, settings, GameManager, GameplaySession, SecureStorage; **parameterized** & **negative** tests |
+| **Play Mode** | Smoke (UI-driven full flow), regression, stability, FPS, memory, load time, memory leaks, orientation |
+| **Device** | Appium smoke + full-flow in CI; Android API 28+30; iOS simulator; Page Object Model |
+| **Categories** | Smoke, Regression, DataIntegrity, Performance, BuildConfig — filter by `[Category]` |
+
+### Intentionally Not Covered
+
+- 100% code coverage
+- Visual/UI pixel-perfect tests
+
+---
+
+## How to Run
+
+### Unity Editor
+
+1. Open project in Unity (2022.3 LTS recommended)
+2. **Edit Mode:** Window → General → Test Runner → EditMode → Run All
+3. **Play Mode:** Test Runner → PlayMode → Run All
+
+### CI
+
+- Push to `main` or `develop` (or open PR) → triggers [qa-automation.yml](.github/workflows/qa-automation.yml)
+- Pipeline: validate → Edit Mode → Play Mode → quality gate → metrics → Android/iOS builds
+- Add `UNITY_LICENSE` secret for real execution; quality gate fails on test failure
+
+---
+
+## Repository Structure
+
+```
+Unity-Mobile-QA/
+├── Assets/
+│   ├── Scripts/          Core, Gameplay, UI, Services
+│   └── Tests/            EditMode, PlayMode, TestUtils
+├── automation/mobile/    Appium specs, Page Object Model
+├── docs/                 Strategy, case study, security, setup
+├── .github/workflows/    QA pipeline, device farm, CodeQL
+└── scripts/              Metrics, reporting, verification
+```
+
+---
+
+## 10/10 Portfolio Checklist
+
+| Category | ✓ |
+|----------|---|
+| [Strategy](docs/automation-strategy.md) | Risk-based prioritization, case study |
+| [Testability](Assets/Scripts/README.md) | Interfaces, DI, FakeDataFactory, test isolation |
+| [Edit Mode](Assets/Tests/EditMode) | Services, GameManager, SecureStorage, parameterized |
+| [Play Mode](Assets/Tests/PlayMode) | Smoke, regression, stability, memory leaks |
+| [Device](automation/mobile/appium) | Appium, POM, explicit waits, JUnit metrics |
+| [CI/CD](.github/workflows) | game-ci, quality gate, metrics dashboard |
+| [Release](docs/rc-checklist.md) | Signing, checklist, rc-signing |
+| [Observability](docs/observability.md) | Logs, telemetry, screenshots, dashboard |
+| [Security](docs/security.md) | CodeQL, SBOM, SecureStorage, SSRF prevention |
+
+---
+
+## Recent Improvements
+
+<details>
+<summary><b>Expand: Test isolation, device metrics, security, and more</b></summary>
+
+- **Test isolation** — `ServiceLocator.ResetForTests()` in Play Mode TearDown
+- **Smoke vs Regression** — UI-driven vs API-driven; documented in [automation-strategy.md](docs/automation-strategy.md)
+- **Demo mode badge** — CI job summary when `UNITY_LICENSE` not configured
+- **Device metrics** — JUnit XML → `device-metrics.json`; merged into dashboard
+- **Parameterized tests** — `CompleteSession_GrantsConfiguredReward`, `AddSessionScore_Negative_IgnoresValue`
+- **Native accessibility** — `AccessibilityBridge`; per-element path in [accessibility.md](docs/accessibility.md)
+- **Settings flow** — Play Mode + device tests for MainMenu → Settings → Back
+- **Device robustness** — `waitForAppReady`, `waitForTransition` replace fixed pause
+- **Page Object Model** — `AppPage.js` for Appium specs
+- **Device matrix** — Android API 28 + 30
+- **SecureStorage tests** — Encryption round-trip, corrupt-data handling
+- **Failure reporting** — Slack webhook in CI; JIRA example with SSRF prevention
+- **Security** — CodeQL C# + JS; SBOM; APK signature verification; IL2CPP enforced
+
+</details>
+
+---
+
+## Why This Demonstrates QA Lead Capability
+
+| Pillar | What It Shows |
+|--------|---------------|
+| **Strategy** | Risk-based prioritization, documented tradeoffs |
+| **Technical** | Testable architecture, DI, reusable utilities |
+| **CI/CD** | Quality gate, metrics, device farm |
+| **Leadership** | Case study format, scalability, pragmatic coverage |
+
+---
+
+<div align="center">
+
+**Made for QA Lead interviews • Unity 2022.3 LTS • Android & iOS**
+
+</div>
+
+---
+
+## License
+
+**MIT** — Use freely for portfolio and interview purposes.

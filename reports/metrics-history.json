@@ -1,0 +1,45 @@
+{
+  "runs": [
+    {
+      "timestamp": "2026-03-18T23:07:45.750Z",
+      "smokePassRate": 0,
+      "smoke": {
+        "passed": 0,
+        "failed": 0,
+        "total": 0
+      },
+      "editMode": {
+        "passed": 0,
+        "failed": 0,
+        "skipped": 0,
+        "total": 0,
+        "duration": 0
+      },
+      "playMode": {
+        "passed": 0,
+        "failed": 0,
+        "skipped": 0,
+        "total": 0,
+        "duration": 0
+      }
+    },
+    {
+      "timestamp": "2026-03-18T22:29:01.023Z",
+      "smokePassRate": 0,
+      "editMode": {
+        "passed": 0,
+        "failed": 0,
+        "skipped": 0,
+        "total": 0,
+        "duration": 0
+      },
+      "playMode": {
+        "passed": 0,
+        "failed": 0,
+        "skipped": 0,
+        "total": 0,
+        "duration": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-03-18T23:07:45.750Z",
+  "editMode": {
+    "passed": 0,
+    "failed": 0,
+    "skipped": 0,
+    "total": 0,
+    "duration": 0
+  },
+  "playMode": {
+    "passed": 0,
+    "failed": 0,
+    "skipped": 0,
+    "total": 0,
+    "duration": 0
+  },
+  "smoke": {
+    "passed": 0,
+    "failed": 0,
+    "total": 0
+  },
+  "smokePassRate": 0,
+  "flakyRate": 0
+}
