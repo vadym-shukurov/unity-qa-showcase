@@ -16,6 +16,7 @@
 |------------|-------|
 | **Understand the strategy** | [Automation Strategy](docs/automation-strategy.md) |
 | **Run tests** | [Setup Guide](docs/setup.md) |
+| **Case Study:** | [Unity Mobile QA Automation](docs/case-study.md) |
 
 ---
 
