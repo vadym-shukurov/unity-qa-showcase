@@ -16,20 +16,6 @@
 |------------|-------|
 | **Understand the strategy** | [Automation Strategy](docs/automation-strategy.md) |
 | **Run tests** | [Setup Guide](docs/setup.md) |
-| **Prepare for interview** | [Case Study](docs/case-study.md) |
-
----
-
-## Four Interview Questions — Answered
-
-| Question | Answer |
-|----------|--------|
-| **What did you automate first?** | Data integrity (progress, currency, settings) in Edit Mode → critical path in Play Mode → stability → device smoke |
-| **Why that scope?** | Risk-based. Highest risk = data loss and broken flow. Pragmatic coverage, not 100%. |
-| **How would you scale it?** | Iterative: stabilize smoke → add regression by risk → add device when build ready. Clear ownership (QA vs dev). |
-| **How does this support release confidence?** | Smoke = release gate. Pipeline fails if smoke fails. Metrics (pass rate, flaky rate) inform decisions. |
-
-> 💡 **Tip:** Key files have `// PRESENTATION:` comments (WHAT FIRST, WHY, SCALE, RELEASE). Use them when walking through code.
 
 ---
 
