@@ -1,9 +1,5 @@
 # Case Study: Unity Mobile QA Automation
 
-*Written as an interview case study. Use to explain: what you automated first, why scope, how scale, release confidence.*
-
----
-
 ## Situation
 
 A mobile Unity game team ships bi-weekly releases to Android and iOS. Manual QA runs a 2-hour smoke suite before each release. Regression escapes have occurred: progress loss, currency bugs, and scene flow breaks. The team wants to automate critical paths and integrate with CI.
