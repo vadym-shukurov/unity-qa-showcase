@@ -4,7 +4,7 @@
 
 **A production-ready QA automation portfolio for Unity Android/iOS projects**
 
-*Every file helps you explain: **what you automated first**, **why that scope**, **how you would scale**, and **how this supports release confidence.***
+*Every file helps to explain: **what you automated first**, **why that scope**, **how you would scale**, and **how this supports release confidence.***
 
 </div>
 
