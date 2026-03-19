@@ -8,10 +8,10 @@
 
 Automation is prioritized by **risk**, not coverage percentage:
 
-1. **Critical path** — App launch, main menu, gameplay flow, result, return to menu
-2. **Data integrity** — Progress save/load, currency, settings persistence
-3. **Monetization** — Currency rewards, IAP/ads integration (mocked in tests)
-4. **Stability** — Repeated operations, scene reload, background/foreground
+1. **Critical path** - App launch, main menu, gameplay flow, result, return to menu
+2. **Data integrity** - Progress save/load, currency, settings persistence
+3. **Monetization** - Currency rewards, IAP/ads integration (mocked in tests)
+4. **Stability** - Repeated operations, scene reload, background/foreground
 
 ## Why Smoke First
 
