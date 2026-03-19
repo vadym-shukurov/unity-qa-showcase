@@ -64,7 +64,7 @@ Output: `reports/editmode-results.xml`, `reports/playmode-results.xml` (JUnit-st
 ## CI Setup (GitHub Actions)
 1. Get Unity license: use [unity-request-activation-file](https://github.com/marketplace/actions/unity-request-activation-file) action
 2. Add `UNITY_LICENSE` as repository secret
-3. Push to trigger pipeline — game-ci runs Edit/Play Mode tests, Android build, metrics dashboard
+3. Push to trigger pipeline - game-ci runs Edit/Play Mode tests, Android build, metrics dashboard
 4. Metrics: `scripts/generate-metrics.js` produces `reports/metrics.json` and `reports/dashboard.html`
 5. **Device farm:** When APK is built, `device-farm.yml` runs Appium smoke on an Android emulator (reactivecircus/android-emulator-runner).
 6. **Secrets/env**: Copy `.env.example` to `.env` for JIRA_TOKEN, APK_PATH (Appium). Never commit `.env`.
